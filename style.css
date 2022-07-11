@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #34623F;
+}
+
+button{
+    cursor: pointer;
+}
+
+button:hover{
+    background: #5D96D4;
+}
+
+button:active{
+    background: #0069D9;
+}
+
+button:disabled{
+    cursor: no-drop;
+    background-color: #ddd;
+}
+/* GAME MENU */
+.game__menu{
+    background: #fff;
+    position: absolute;
+    top: 108px;
+    border: 3px #000 solid;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.top {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.logo {
+    display: grid;
+}
+
+.game__control {
+    display: flex;
+    align-items: center;
+}
+
+.input{
+    width: 720px;
+    height: auto;
+}
+
+.goal{
+    display: flex;
+    font-size: 28px;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+
+.name__input{
+    border: 2px #000 solid;
+    border-radius: 10px;
+    padding: .5rem;
+}
+
+.name__submit{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: .75rem;
+}
+
+.btn__start{
+    border: none;
+    border-radius: 5px;
+    padding: .5rem;
+    background-color: #34baab;
+    color: #fff;
+}
+
+/* GAME DISPLAY */
+.display {
+    padding: 2rem;
+    width: 1024px;
+    height: 100vh;
+}    
+
+.header {
+    display: none;
+    grid-template-columns: 30% 40% 30%;
+    margin-top: 2rem;
+}    
+
+.score {
+    color: #FFFFFF;
+    display: flex;
+ 
+    font-weight: 600;
+    font-size: 22px;
+}    
+
+.current-score {
+    text-align: center;
+}    
+
+.phytons {
+    display: flex;
+    justify-content: center;
+}    
+
+.time {
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 22px;
+    display: flex;
+    justify-content: right;
+}    
+
+.current-time {
+    text-align: center;
+}    
+
+.canvas {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}    
+
+.reload__btn {
+    display: none;
+    text-decoration: none;
+    background: #18775C;
+    color: #FFFFFF;
+    border: none;
+    padding: 1rem 1rem;
+    border-radius: 100px;
+    font-size: 24px;
+    margin-top: 1rem;
+}    

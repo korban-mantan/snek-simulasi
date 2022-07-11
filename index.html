@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snek</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game__menu" id="game__menu">
+        <div class="top">
+            <div class="logo">
+                <img src="design/game_icon.png" alt="Snek logo">
+            </div>
+            <div class="game__control">
+                <div class="wasd">
+                    <img src="design/game_control.png" alt="" class="input">
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <div class="goal">
+                <h5>Goal : Eat as many apples as you can!<br>And don't crash at your own tail</h5>
+            </div>
+            <div class="name__submit">
+                <input type="text" placeholder="Name" id="name" class="name__input" onkeyup="success()"><br>
+                <button class="btn__start" id="btn__start" onclick="getValueInput()" disabled>Start</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="display">
+        <div class="header" id="header">
+          <div class="score">
+            <div>
+              <img class="score__img" src="design/score.png" alt="Score" />
+              <p id="score" class="current-score">0</p>
+            </div>
+          </div>
+          <div class="phytons">
+            <img class="python__img" src="design/phytons.png" alt="Phytons" />
+          </div>
+          <div class="time">
+            <div>
+              <img class="time__img" src="design/time.png" alt="Time" />
+              <p id="current-time">
+                <span id="seconds"></span>: <span id="tens"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="canvas">
+          <canvas id="game" width="960" height="600"></canvas>
+        </div>
+    
+    
+        <div class="footer">
+          <button type="button" class="reload__btn" id="reload__btn" onclick="reload()">Reload</button>
+        </div>
+      </div>
+
+        
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
